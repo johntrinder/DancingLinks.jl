@@ -25,5 +25,6 @@ The resulting list of solutions found (each solution is a Vector{Int64} of row i
     `# build your incidence matrix first, a Matrix{Bool}`
     exact_cover(matrix)
     solve() # get a random solution (without 'givens')
+            # the result will be in exported global `solutions`
 
 Refer to the package "Sudoku2" for a thorough testing of this "DancingLinks" implementation.
