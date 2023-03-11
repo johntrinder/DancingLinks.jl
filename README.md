@@ -1,12 +1,12 @@
 ## DancingLinks
 ## Exported:
 + exact_cover(matrix::Matrix{Bool}; do_check::Bool) 
-    `matrix` is the 'Exact Cover' incidence matrix
-    Initializes global vars `incidence_matrix`, `nrows`, `ncols`.
-    This must be executed before function `solve` is called.
+        `matrix` is the 'Exact Cover' incidence matrix
+        Initializes global vars `incidence_matrix`, `nrows`, `ncols`.
+        This must be executed before function `solve` is called.
     
 + solve(; verbose=false, max_solutions=1, deterministic=false) ::Bool
-    Solve the matrix with no starting state.
+        Solve the matrix with no starting state.
  
 + solve(starting_state::Vector{Int64}; verbose=false, max_solutions=1, deterministic=false) ::Bool
 
@@ -18,13 +18,13 @@
         [deterministic]   `Sets global `DO_DETERMINISTICALLY; false=select rows at random.`
         
 + solutions
-    The resulting list of solutions found (each solution is a Vector{Int64} of row indices into the global
-    `incidence_matrix` and is ordered).
+        The resulting list of solutions found (each solution is a Vector{Int64} of row indices into the global
+        `incidence_matrix` and is ordered).
 
 + convert_nanoseconds(nanosecs::Real; ncols::Integer=0, units::Union{Nothing, Symbol}=nothing, omitunits::Bool=false)::String
-    Helper
+        Helper
 + vector_sans_type(vec::AbstractVector)::String
-    Helper
+        Helper
 ## Example:
     `# build your incidence matrix first, a Matrix{Bool}`
     exact_cover(matrix)
