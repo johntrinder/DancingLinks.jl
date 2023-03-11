@@ -28,7 +28,7 @@
 
         Helper
 ## Example:
-    `# build your incidence matrix first, a Matrix{Bool}`
+    # build your incidence matrix first, a Matrix{Bool}
     exact_cover(matrix)
     solve() # get a random solution (without 'givens')
             # the result will be in exported global `solutions`
