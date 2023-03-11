@@ -1,14 +1,14 @@
 ## DancingLinks
 ## Exported:
 + exact_cover(matrix::Matrix{Bool}; do_check::Bool) 
-        `matrix` is the 'Exact Cover' incidence matrix
+        'matrix' is the 'Exact Cover' incidence matrix
         Initializes global vars `incidence_matrix`, `nrows`, `ncols`.
         This must be executed before function `solve` is called.
     
-+ solve(; verbose=false, max_solutions=1, deterministic=false) ::Bool
++ solve(; verbose=false, max_solutions=1, deterministic=false)::Bool
         Solve the matrix with no starting state.
  
-+ solve(starting_state::Vector{Int64}; verbose=false, max_solutions=1, deterministic=false) ::Bool
++ solve(starting_state::Vector{Int64}; verbose=false, max_solutions=1, deterministic=false)::Bool
 
         starting_state    `List of rows' by indices into the provided constraint matrix 
                             (global var `incidence_matrix`)
