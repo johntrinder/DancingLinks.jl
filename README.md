@@ -1,5 +1,5 @@
 ## DancingLinks
-# Exported:
+## Exported:
 + exact_cover(matrix::Matrix{Bool}; do_check::Bool) # `matrix` is the 'Exact Cover' incidence matrix
 Initializes global vars `incidence_matrix`, `nrows`, `ncols`.
 This must be executed before function `solve` is called.
@@ -21,7 +21,7 @@ The resulting list of solutions found (each solution is a Vector{Int64} of row i
 + convert_nanoseconds(nanosecs::Real; ncols::Integer=0, units::Union{Nothing, Symbol}=nothing, omitunits::Bool=false)::String
 +
 + vector_sans_type(vec::AbstractVector)::String
-# Example:
+## Example:
     `# build your incidence matrix first, a Matrix{Bool}`
     exact_cover(matrix)
     solve() # get a random solution (without 'givens')
