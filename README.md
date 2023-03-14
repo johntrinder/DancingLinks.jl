@@ -1,4 +1,7 @@
 ## DancingLinks
+
+A Julia implementation of D.Knuth's "Dancing Links" (DLX) a solver for the
+"Exact Cover" problem.
 ## Exported:
 + exact_cover(matrix::Matrix{Bool}; do_check::Bool) 
 
