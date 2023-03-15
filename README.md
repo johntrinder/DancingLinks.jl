@@ -2,6 +2,10 @@
 
 A Julia implementation of D.Knuth's "Dancing Links" (DLX) a solver for the
 "Exact Cover" problem.
+
+This a registered package so do this in Julia:
+
+] add DancingLinks
 ## Exported:
 + exact_cover(matrix::Matrix{Bool}; do_check::Bool) 
 
