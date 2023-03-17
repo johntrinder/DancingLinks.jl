@@ -34,7 +34,7 @@ This a registered package so do this in Julia:
 + vector_sans_type(vec::AbstractVector)::String
 
         Helper
-## Example:
+## Example:  
     # build your incidence matrix first, a Matrix{Bool}
     exact_cover(matrix)
     solve() # get a random solution (without 'givens')
